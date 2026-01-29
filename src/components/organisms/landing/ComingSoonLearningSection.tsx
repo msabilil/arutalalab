@@ -92,7 +92,7 @@ export default function ComingSoonLearningSection() {
 
     return (
         <>
-            <section className="w-full py-12 px-4 sm:px-6 lg:px-8 lg:py-20">
+            <section id="pelatihan-mendatang" className="w-full py-12 px-4 sm:px-6 lg:px-8 lg:py-20">
                 <div className="max-w-md md:max-w-2xl lg:max-w-5xl 2xl:max-w-7xl mx-auto rounded-2xl bg-gradient-to-b from-[var(--color-primary-100)] to-[var(--color-primary-300)] relative overflow-hidden lg:h-auto">
                     {/* Container untuk layout 60-40 */}
                     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 relative z-10">

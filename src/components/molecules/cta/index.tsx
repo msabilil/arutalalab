@@ -1,6 +1,13 @@
+'use client'
 import { Typography, Button, Image } from '../../index'
+import { useRouter } from 'next/navigation'
 
 export function CTA() {
+    const router = useRouter()
+    const handleContactClick = () => {
+        router.push('/kontak')
+    }
+
     return (
         <section className="w-full px-4 py-12 md:py-30">
             <div className="max-w-xs sm:max-w-md md:max-w-5xl 2xl:max-w-[1440px] mx-auto flex justify-center">
@@ -36,6 +43,7 @@ export function CTA() {
                                     shape="outline"
                                     color="accent-600"
                                     className="border-2 sm:text-xs sm:px-4 py-3 sm:min-h-[1rem] sm:rounded-[20px] lg:text-sm lg:px-6 py-3 lg:min-h-[2.5rem] lg:gap-3 lg:rounded-[20px]"
+                                    onClick={handleContactClick}
                                 >
                                     Hubungi Kami
                                 </Button>
